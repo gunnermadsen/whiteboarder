@@ -7,7 +7,8 @@ export class WhiteboardCanvasDirective {
   private isMousePressed = false
   private lastX: number
   private lastY: number
-  private context: CanvasRenderingContext2D = null
+  public context: CanvasRenderingContext2D = null
+
   private canvas: HTMLCanvasElement
 
   constructor(private element: ElementRef<HTMLCanvasElement>, private renderer: Renderer2) {
